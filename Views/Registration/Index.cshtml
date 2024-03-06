@@ -1,0 +1,55 @@
+﻿@model Event.Models.RegistrationModel
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@ViewBag.Username
+
+<p>
+    <button asp-action="Create" class="btn btn-primary">Create New</button>
+</p>
+
+<div id="divDataMaster" class="">
+    <div id="" class="container-fluid">
+        <div id="" class="col-md-9">
+            <form>
+                <div id="" class="row" style="margin-left:10px ; margin-top:100px;  width: 140%">
+                    <div class="card shadow border" style="margin-left:10px; width: 135%">
+                        <div class="col-8 col-xl-8 grid-margin stretch-card">
+                            <table id="tblRegistration" class="table" style="width:100px; color:black">
+                                <thead>
+                                    <tr>
+                                        <th>UserName</th>
+                                        <th>MobileNo</th>
+                                        <th>EmailId</th>
+                                        <th>Gender</th>
+                                        <th>Birthdate</th>
+                                        <th>Country</th>
+                                        <th>State</th>
+                                        <th>City</th>
+                                        <th>Address</th>
+                                        <th>CreatedOn</th>
+
+
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/js/register.js"></script>
+@* <script src="~/js/site.js"></script>*@
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+@* <script src="~/js/flower.js"></script> *@
+
+<script src="~/js/userprofile.js"></script>

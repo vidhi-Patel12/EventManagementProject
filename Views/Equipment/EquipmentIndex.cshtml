@@ -1,0 +1,95 @@
+﻿@model Event.Models.EquipmentModel
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+    <div  id="divDataMaster"class="content fifth-content">
+        <div class="container-fluid">
+           
+            <div class="col-md-9">
+                <div id="divDataMaster" class="row" style="margin-left:100px ; margin-top:100px">
+                    <div class="card shadow border" style="margin-left:10px; width: 100%">
+                    <div class="col-8 col-xl-8 grid-margin stretch-card" style="width:98%;">
+                            <table id="tblEquipment" class="table" style="width:100px; color:black">
+                                <thead>
+                                <tr style="width:98%;">
+                                        <th>EquipmentId</th>
+                                        <th>EquipmentName</th>
+                                        <th>EquipmentCost</th>
+                                    </tr>
+                                </thead>
+                                <div>
+                                <button type="button" class="btn btn-primary" id="" onclick="fnAddNewMaster()" style="margin-top:10px">Add New</button>
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="divAddEditElements" class="card row" style="margin-top:100px; margin-left:120px;width:50%; border-width: 2px;border-style: solid; ">
+        <div class="row">
+            <div class="d-flex card-body font-weight-bold" >       
+                <div class="col-lg-7">
+                    <form id="divAddEditElements">
+                            <h3><span class="label label-info">Add Equipment</span></h3>
+                            <div class="form-group">
+                                @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                                <input type="hidden" asp-for="EquipmentID" class="form-control" id="EquipmentID" value="0" />
+                                @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" asp-for="EquipmentName">Equipment Name</label>
+                                <input asp-for="EquipmentName" type="text" class="form-control" id="EquipmentName" required/>
+                                <span asp-validation-for="EquipmentName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" asp-for="EquipmentCost">Equipment Cost</label>
+                                <input asp-for="EquipmentCost" type="text" class="form-control" id="EquipmentCost" />
+                                <span asp-validation-for="EquipmentCost" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <label class="control-label">Upload Equipment</label>
+                                    <input type="hidden" name="EquipmentFilename" multiple id="EquipmentFilename" />
+                            <input required type="file" title="Please Upload Equipment" asp-for="EquipmentFilePath" name="files" multiple id="EquipmentFilePath" />
+                                   <span asp-validation-for="EquipmentFilePath" class="text-danger"></span>
+                                    <br />
+                                    <img src="" alt="Image" id="EquipmentImage" style="width: 200px; height:150px" />
+                                </div>
+                        <div id="EquipmentFilenameLabel"></div>
+                            </div>
+                            <div>
+                              <button type="button" id="btnSaveUpdateEquipment" onclick="fnAddUpdateEquipment()" class="btn btn-primary">Add/Edit</button>
+                           
+                                <button type="button" class="btn btn-primary" id="" onclick="fnLoadData()">ShowAll Equipment</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* <div class="" style="margin-left:10px"><a onclick="fnAddUpdateEquipment()" style="margin-left:10px ;color:black">Add Equipment</a></div>     *@
+
+
+<a href="~/lib/jquery/dist/jquery.min.map"></a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+<script src="~/js/equipment.js"></script>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

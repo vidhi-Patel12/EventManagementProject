@@ -1,0 +1,176 @@
+﻿@model Event.Models.RegistrationModel
+
+<div class="container" style="width:60%">
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:center">Register</div>
+        <div class="panel-body">
+            @{
+                ViewData["Title"] = "Registration";
+            }
+
+            @* <h1>Registration</h1> *@
+
+            <div class="row">
+                <div class="row-md-6">
+                    <div class="card-body row-md-4" style="align-content:center">
+                        <form >
+                            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+                            <div class="form-group">
+                                @* <label asp-for="ID" class="control-label"></label> *@
+                                <input type="hidden" class="form-control" id="RId" />
+                                @* <span asp-validation-for="ID" class="text-danger"></span> *@
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Name">Name</label>
+                                        <input autocomplete="off" class="form-control" asp-for="Name" id="Name" required/>
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Address">Address</label>
+                                        <input class="form-control" asp-for="Address" id="Address" required />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Country">Country</label>
+                                        @* <input  class="form-control" asp-items="ViewBag.CountryID" id="Country" /> *@
+                                        <select id="Country" style="width: 280px; height:30px" required>
+                                            @*  <option value="">Country</option> *@
+                                        </select>
+                                        @* <input  class="form-control" asp-items="ViewBag.CountryID" id="Country" /> *@
+                                        <span asp-validation-for="Country" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="State">State</label>
+                                        <select onchange="" id="State" style="width:280px; height:30px" required>
+                                            @* <option value="">State</option> *@
+                                        </select>
+                                        <span asp-validation-for="State" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="City">City</label>
+                                        <select onchange="" id="City" style="width:280px;height:30px" required>
+                                            @* <option value="">City</option> *@
+                                        </select>
+                                        <span asp-validation-for="City" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Mobileno">Mobile No</label>
+                                        <input type="number" class="form-control" asp-for="Mobileno" id="Mobileno" required />
+                                        <span asp-validation-for="Mobileno" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="EmailID">Email ID</label>
+                                        <input type="email" class="form-control" asp-for="EmailID" id="EmailID" required />
+                                        <span asp-validation-for="EmailID" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Username">Username</label>
+                                        <input class="form-control" asp-for="Username" id="Username" required />
+                                        <span asp-validation-for="Username" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Password">Password</label>
+                                        <input type="password" class="form-control" asp-for="Password" id="Password" required />
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="ConfirmPassword">ConfirmPassword</label>
+                                        <input type="password" class="form-control" asp-for="ConfirmPassword"  id="ConfirmPassword" required />
+                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Gender">Gender</label><br/>
+                                        Male: <input id="Gender" name="Gender" type="radio" value="Male" />
+                                        Female: <input id="Gender" name="Gender" type="radio" value="Female" />
+                                        <span asp-validation-for="Gender" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="Birthdate">Birthdate</label>
+                                        <input type="date" class="form-control" asp-for="Birthdate" id="Birthdate" required min="1860-01-01" max="2020-12-31" />
+                                        <span asp-validation-for="Birthdate" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="RoleID">RoleID</label>
+                                        <select id="RoleID">
+                                        <option value="1">Admin</option>
+                                        <option value="2">Customer</option>
+                                        <option value="3">SuperAdmin</option>
+                                        </select>
+                                        <span asp-validation-for="RoleID" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        @*  <label class="control-label">CreatedOn</label> *@
+                                        <input type="hidden" class="form-control" id="CreatedOn" required />
+                                        <span class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <button type="button" onclick="fnRegister()" value="Create" class="btn btn-primary">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+<script src="~/js/register.js"></script>
+@* <script src="~/js/site.js"></script> *@
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

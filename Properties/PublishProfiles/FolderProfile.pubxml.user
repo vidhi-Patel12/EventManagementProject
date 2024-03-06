@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\Event Publish on IIS</_PublishTargetUrl>
+    <History>True|2024-02-29T12:00:53.9044369Z;True|2024-02-29T17:27:57.8252472+05:30;True|2024-02-29T16:57:46.4863210+05:30;True|2024-02-29T16:38:02.6640705+05:30;False|2024-02-29T14:08:29.9797566+05:30;False|2024-02-29T14:07:52.2763701+05:30;False|2024-02-29T14:07:16.0863068+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

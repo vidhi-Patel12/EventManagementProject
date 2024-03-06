@@ -1,0 +1,137 @@
+﻿@model Event.Models.BookingDetailModel
+
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<div id="divBookingMaster" class="">
+    <div id="" class="container-fluid">
+        <div id="" class="col-md-9">
+            <form>
+                <div id="" class="row" style="margin-left:100px ; margin-top:100px">
+                    <div class="card shadow border" style="margin-left:10px; width: 100%">
+                        <div class="col-8 col-xl-8 grid-margin stretch-card">
+                            <table id="tblbookingdetail" class="table" style="width:200px; color:black">
+                                <thead>
+                                    <tr>
+                                        <th>BookingNo</th>
+                                        <th>BookingDate</th>
+                                        <th>BookingApproval</th>
+                                        <th>BookingApprovalDate</th>
+                                        <th>Process</th>
+                                    </tr>
+                                </thead>
+                                @* <div>
+                                <button type="button" class="btn btn-primary" id="" onclick="fnBookingDetail()"></button>
+                                </div> *@
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="divAddEditElements" class="container-fluid" style="margin-left:10px ;margin-top:50px">
+<div id="" class="card row" style="margin-top:50px; margin-left:120px;width:60%; border-width: 2px;border-style: solid; ">
+   
+        <br />
+        <h3><span class="label label-info" style="margin-left:10px ;margin-top:50px">Booking Approval</span></h3>
+        @* <div  class="">
+        <div class="d-flex container-fluid" style="margin-left:100px ;margin-top:50px"> *@
+        <div class="col-md-10">
+            <form>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                    <input type="hidden" asp-for="BookingID" class="form-control" id="BookingID" />
+                    @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label" asp-for="BookingNo">BookingNo</label>
+                            <input asp-for="BookingNo" type="text" class="form-control" id="BookingNo" />
+                            <span asp-validation-for="BookingNo" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label" asp-for="BookingDate">BookingDate</label>
+                            <input asp-for="BookingDate" type="text" class="form-control" id="BookingDate" />
+                            <span asp-validation-for="BookingDate" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Venue Cost</label>
+                            <input type="number" class="form-control" id="VenueCost" />
+                            <span validation-for="Total Venue Cost" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Equipment Cost</label>
+                            <input type="number" class="form-control" id="EquipmentCost" />
+                            <span validation-for="Total Equipment Cost" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Food Cost</label>
+                            <input type="number" class="form-control" id="FoodCost" />
+                            <span validation-for="Total Food Cost" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Light Cost</label>
+                            <input type="number" class="form-control" id="LightCost" />
+                            <span validation-for="Total Light Cost" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Flower Cost</label>
+                            <input type="number" class="form-control" id="FlowerCost" />
+                            <span validation-for="Total Flower Cost" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Total Amount</label>
+                            <input type="number" class="form-control" readonly id="TotalAmount" />
+                            <span validation-for="Total Amount" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="btnapprove" onclick="Approve()" class="btn btn-success">Approve</button>
+                    <button type="button" id="btnreject" onclick="REJECT()" class="btn btn-success">Reject</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+<script src="~/js/bookingdetails.js"></script>

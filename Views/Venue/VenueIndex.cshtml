@@ -1,0 +1,104 @@
+﻿@model Event.Models.VenueModel
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<p>Welcome, @ViewBag.Username!</p>
+
+    <div id="divVenueMaster" class="">
+        <div id="" class="container-fluid">
+            <div id="" class="col-md-9">
+                <form>
+                <div id="" class="row" style="margin-left:100px ; margin-top:100px">
+                        <div class="card shadow border" style="margin-left:10px; width: 100%">
+                        <div class="col-8 col-xl-8 grid-margin stretch-card" style="width:98%;">
+                                <table id="tblVenue" class="table" style="width:90%; color:black">
+                                    <thead>
+                                    <tr style="width:90%;">
+                                            <th>VenueName</th>
+                                            <th>VenueCost</th>
+                                        </tr>
+                                    </thead>
+                                    <div>
+                                    <button type="button" class="btn btn-primary" id="" onclick="fnAddNewMaster()" style="margin-top:10px">Add New</button>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="divAddEditElements" class="card row" style="margin-top:100px; margin-left:120px;width:50%; border-width: 2px;border-style: solid; ">
+        <div class="row">
+            <div class="d-flex card-body font-weight-bold" >
+                <div class="col-lg-7">
+                    <form>
+                        <h3><span class="label label-info">Add Venue</span></h3>
+                        <div class="form-group">
+                            @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                            <input type="hidden" asp-for="VenueID" class="form-control" id="VenueID" value="0" />
+                            @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" asp-for="VenueName">Venue Name</label>
+                            <input asp-for="VenueName" type="text" class="form-control" id="VenueName" />
+                            <span asp-validation-for="VenueName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" asp-for="VenueCost">Venue Cost</label>
+                            <input asp-for="VenueCost" type="text" class="form-control" id="VenueCost" />
+                            <span asp-validation-for="VenueCost" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                            <label class="control-label" asp-for="VenueFilePath">Upload Venue</label>
+                                <input type="hidden" name="VenueFilename" multiple id="VenueFilename" />
+                            <input required type="file" title="Please Upload Venue" asp-for="VenueFilePath" name=" files" multiple id="VenueFilePath" />
+                           @*  <span id="filePathDisplay"></span> *@
+                               <span asp-validation-for="VenueFilePath" class="text-danger"></span>
+                                <br />
+                                <img src="" alt="Image" id="VenueImage" style="width: 200px; height:150px" />
+                            </div>
+                        <div id="venueFilenameLabel"></div>
+                        </div>
+                        <div>
+                            <button type="button" id="btnSaveUpdateVenue" onclick="fnAddUpdateVenue()" class="btn btn-primary">Add/Edit</button>
+                            <button type="button" class="btn btn-primary" id="" onclick="fnLoadData()">ShowAll Venue</button>
+                        </div>
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+
+<script src="~/bootbox.all.js"></script>
+<script src="~/bootbox.all.min.js"></script>
+<script src="~/bootbox.js"></script>
+<script src="~/bootbox.locales.js"></script>
+<script src="~/bootbox.locales.min.js"></script>
+<script src="~/bootbox.min.js"></script>
+
+<script src="~/js/venue.js"></script>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

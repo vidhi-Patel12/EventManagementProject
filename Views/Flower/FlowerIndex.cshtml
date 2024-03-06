@@ -1,0 +1,89 @@
+﻿@model Event.Models.FlowerModel
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<div id="divFlowerMaster" class="">
+    <div id="" class="container-fluid">
+        <div id="" class="col-md-9">
+            <form>
+                <div id="" class="row" style="margin-left:100px ; margin-top:100px">
+                    <div class="card shadow border" style="margin-left:5px; width:150%">
+                        <div class="col-10 col-xl-10 grid-margin stretch-card" style="width:98%">
+                            <table id="tblFlower" class="table" style="width:290px; color:black">
+                                <thead>
+                                    <tr style="width:98%;">
+                                        <th>FlowerId</th>
+                                        <th>FlowerName</th>
+                                        <th>FlowerCost</th>
+                                    </tr>
+                                </thead>
+                                <div >
+                                    <button type="button" class="btn btn-primary" id="" onclick="fnAddNewMaster()" style="margin-top:10px">Add New</button>
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="divAddEditElements" class="card row" style="margin-top:90px; margin-left:120px;width:50%; border-width: 2px;border-style: solid; ">
+    <div class="d-flex container-fluid" >
+        <div class="col-md-7">
+            <form>
+                <h3><span class="label label-info">Add Flower</span></h3>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="FlowerName">FlowerID</label> *@
+                    <input type="hidden" class="form-control" id="FlowerID" value="0" />
+                    @* <span asp-validation-for="FlowerName" class="text-danger"></span> *@
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="FlowerName">Flower Name</label>
+                    <input asp-for="FlowerName" type="text" class="form-control" id="FlowerName" required />
+                    <span asp-validation-for="FlowerName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="FlowerCost">Flower Cost</label>
+                    <input asp-for="FlowerCost" type="text" class="form-control" id="FlowerCost" />
+                    <span asp-validation-for="FlowerCost" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="controls">
+                        <label class="control-label">Upload Flower</label>
+                        <input type="hidden" name="FlowerFilename" multiple id="FlowerFilename" />
+                        <input required type="file" title="Please Upload Flower" name="files" multiple id="FlowerFilePath" />
+                        <br />
+                        <img src="" alt="Image" id="FlowerImage" style="width: 200px; height:150px" />
+                    </div>
+                    <div id="flowerFilenameLabel"></div>
+                </div>
+                <div>
+                    <button type="button" id="btnSaveUpdateFlower" onclick="fnAddUpdateFlower()" class="btn btn-primary">Add/Edit</button>
+                    <button type="button" class="btn btn-primary" id="" onclick="fnLoadData()">ShowAll Flower</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+<script src="~/js/flower.js"></script>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

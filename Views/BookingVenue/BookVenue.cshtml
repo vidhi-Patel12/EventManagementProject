@@ -1,0 +1,116 @@
+﻿@model Event.Models.BookingVenue
+@{
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+<li style="margin-left:300px"> <a href="#"> Hi @ViewBag.Username! </a> </li>
+<div id="" class="card row" style="margin-top:90px; margin-left:120px;width:40%; border-width: 2px;border-style: solid; ">
+    <div class="d-flex container-fluid">
+        <div class="col-md-6">
+            <form>
+                <h3><span class="label label-info" style="margin-left:10px ;margin-top:10px">Book Venue</span></h3>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                    <input type="hidden" class="form-control" id="BookingVenueID" value="0" />
+                    @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Event Type</label> <br />
+
+                    <select id="EventID" style="width: 150px;" required>
+                        @*  <option value="">Country</option> *@
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Venue Type</label> <br />
+
+                    <select id="VenueID" style="width: 150px;" onchange="changeImage()" required>
+                        @*  <option value="">Country</option> *@
+                    </select>
+                    <span asp-validation-for="VenueID" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label">No of Guest</label>
+                    <input type="number" class="form-control" id="GuestNo" required/>
+                    <span asp-validation-for="GuestNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="controls">
+                        <label class="control-label">Booking Date</label>
+                        <input type="date" class="form-control" id="BookingDate" required/>
+                        <span asp-validation-for="BookingDate" class="text-danger"></span>
+                        <br />
+
+                    </div>
+                    <img src="" alt="Image" id="VenueImage" style="width: 200px; height:150px" />
+                </div>
+                <input type="hidden" class="form-control" id="BookingID" />
+                <div>
+                    <button onclick="fnBookingDetails()" class="btn btn-success" type="button">Book Event</button>
+                    @Html.ActionLink("Cancel", "Dashboard", "Customer", null, new { @class = "btn btn-primary" })
+
+                    @* <button type="button" class="btn btn-primary" id="" onclick="">Cancel</button> *@
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/bookingvenue.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/site.css" rel="stylesheet" />
+
+<script>
+
+    function changeImage() {
+        var selectedOption = document.getElementById("VenueID").options[document.getElementById("VenueID").selectedIndex];
+        var venueFilePath = selectedOption.getAttribute('data-img');
+        document.getElementById("VenueImage").src = venueFilePath ? venueFilePath : "/wwwroot/VenueImages.jpg";
+    }
+
+
+    $(document).ready(function () {
+        // Event listener for the selectedDate input change
+        $("#BookingDate").on("change", function () {
+            var bookingDate = $(this).val();
+            var venueID = $("#VenueID").val(); // Assuming VenueID is the ID of the input for the selected venue
+
+            // Perform server-side validation to check if the selected date and venue are available
+            $.ajax({
+                url: "/BookingVenue/CheckBookingAvailability",
+                type: "POST",
+                data: { bookingDate: bookingDate, venueID: venueID },
+                success: function (response) {
+                    if (response.success) {
+                        // Date and venue are available, remove any error message
+                        $("#bookingErrorMessage").text("");
+                    } else {
+                        // Show error message in an alert
+                        alert(response.errorMessage);
+                        $("#BookingDate").val("");
+                    }
+                },
+                error: function (xhr) {
+                    // Date is already booked for the same venue or same date is booked for different venue, show error message
+                    $("#bookingErrorMessage").text(xhr.responseText);
+                }
+            });
+        });
+    });
+
+
+
+
+
+</script>
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

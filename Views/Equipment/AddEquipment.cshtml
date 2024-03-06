@@ -1,0 +1,62 @@
+﻿@* @model Event.Models.EquipmentModel
+
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+} *@
+@* <div class="card row-lg-9" style="margin-top:100px">
+    <div class="row">
+        <div class="d-flex card-body">
+            @if (TempData["EquipmentMessage"] != null)
+            {
+                <p class="alert alert-success" id="successMessage">@TempData["EquipmentMessage"]</p>
+            }
+            <div class="col-lg-9">
+
+                <form method="post" enctype="multipart/form-data" asp-controller="Equipment" asp-action="AddEquipment">
+                    <div class="col-xs-offset-0 ">
+
+                        <h3><span class="label label-info">Add Equipment</span></h3>
+                        <div class="form-group">
+                            @* <label class="control-label" asp-for="VenueName">VenueID</label> 
+                            <input type="hidden" asp-for="EquipmentID" class="form-control" id="EquipmentID" />
+                            @* <span asp-validation-for="VenueName" class="text-danger"></span> 
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" asp-for="EquipmentName">Equipment Name</label>
+                            <input asp-for="EquipmentName" type="text" class="form-control" id="EquipmentName" />
+                            <span asp-validation-for="EquipmentName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" asp-for="EquipmentCost">Equipment Cost</label>
+                            <input asp-for="EquipmentCost" type="text" class="form-control" id="EquipmentCost" />
+                            <span asp-validation-for="EquipmentCost" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label">Upload Equipment</label>
+                                <input required type="file" title="Please Upload Equipment" name="files" multiple id="EquipmentFilePath" />
+                                <input type="hidden" name="files" id="EquipmentFileName" />
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button onclick="fnAddUpdateEquipment()" type="button" class="btn btn-success">Add Equipment</button>
+                        </div>
+
+                        <div class="form-actions">
+                            <a href="/EquipmentIndex/EquipmentIndex">Show All Equipment</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+ 
+<a href="~/lib/jquery/dist/jquery.min.map"></a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<script src="~/js/equipment.js"></script>@**@

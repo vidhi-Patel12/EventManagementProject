@@ -1,0 +1,757 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net-dt\\1.13.7\\contentFiles\\any\\any\\wwwroot\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net-dt\\1.13.7\\contentFiles\\any\\any\\wwwroot\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net-dt\\1.13.7\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net-dt\\1.13.7\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Event.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Event.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\51KZcUQIyiS.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\51KZcUQIyiS.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\dj drums.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\dj drums.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\images.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\images.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\logo event.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\logo event.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\EquipmentImages\\mike stockphoto.jpg",
+      "PackagePath": "staticwebassets\\EquipmentImages\\mike stockphoto.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\51KZcUQIyiS.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\51KZcUQIyiS.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\Birthday Flower.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\Birthday Flower.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\Commercial-Outdoor-Light.jpeg",
+      "PackagePath": "staticwebassets\\FlowerImages\\Commercial-Outdoor-Light.jpeg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\Flower 2.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\Flower 2.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\Flower1.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\Flower1.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\Garden Venue Lights.jfif",
+      "PackagePath": "staticwebassets\\FlowerImages\\Garden Venue Lights.jfif"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\download (2).jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\download (2).jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\event-management logo.png",
+      "PackagePath": "staticwebassets\\FlowerImages\\event-management logo.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\wdding Flower.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\wdding Flower.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\wedding-decoration flowers.jpg",
+      "PackagePath": "staticwebassets\\FlowerImages\\wedding-decoration flowers.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\Maharastrian thali.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\Maharastrian thali.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\South indian thali.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\South indian thali.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\non-veg punjabi thali.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\non-veg punjabi thali.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\south-indian-non-veg thali.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\south-indian-non-veg thali.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FoodImages\\veg-punjabi thali.jpg",
+      "PackagePath": "staticwebassets\\FoodImages\\veg-punjabi thali.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\Commercial-Outdoor-Light.jpeg",
+      "PackagePath": "staticwebassets\\LightImages\\Commercial-Outdoor-Light.jpeg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\Garden Venue Lights.jfif",
+      "PackagePath": "staticwebassets\\LightImages\\Garden Venue Lights.jfif"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\Garden out door lights.jpg",
+      "PackagePath": "staticwebassets\\LightImages\\Garden out door lights.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\Halogen light.jpg",
+      "PackagePath": "staticwebassets\\LightImages\\Halogen light.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\Sparkling-Warm-LED-Icicle-Lights.jpg",
+      "PackagePath": "staticwebassets\\LightImages\\Sparkling-Warm-LED-Icicle-Lights.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\LightImages\\string In-door.jpeg",
+      "PackagePath": "staticwebassets\\LightImages\\string In-door.jpeg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Commercial-Outdoor-Light.jpeg",
+      "PackagePath": "staticwebassets\\VenueImages\\Commercial-Outdoor-Light.jpeg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Eventlogo1.png",
+      "PackagePath": "staticwebassets\\VenueImages\\Eventlogo1.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Palace Venue.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\Palace Venue.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Rasturant venue.jfif",
+      "PackagePath": "staticwebassets\\VenueImages\\Rasturant venue.jfif"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\banquet-hall.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\banquet-hall.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\download (2).jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\download (2).jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\download.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\download.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\garden-ocean-wedding-02.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\garden-ocean-wedding-02.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\restaurant venue.jfif",
+      "PackagePath": "staticwebassets\\VenueImages\\restaurant venue.jfif"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\venue-on-the-beach.jpg",
+      "PackagePath": "staticwebassets\\VenueImages\\venue-on-the-beach.jpg"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\assets\\js\\data-table.js",
+      "PackagePath": "staticwebassets\\assets\\js\\data-table.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\assets\\js\\datatables.net-bs5\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables.net-bs5\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\assets\\js\\datatables.net-bs5\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables.net-bs5\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\assets\\js\\datatables.net\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables.net\\jquery.dataTables.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\assets\\js\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.all.js",
+      "PackagePath": "staticwebassets\\bootbox.all.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.all.min.js",
+      "PackagePath": "staticwebassets\\bootbox.all.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.js",
+      "PackagePath": "staticwebassets\\bootbox.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.locales.js",
+      "PackagePath": "staticwebassets\\bootbox.locales.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.locales.min.js",
+      "PackagePath": "staticwebassets\\bootbox.locales.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\bootbox.min.js",
+      "PackagePath": "staticwebassets\\bootbox.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\css\\my-slider-1.0.0.css",
+      "PackagePath": "staticwebassets\\css\\my-slider-1.0.0.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\AllBooking.js",
+      "PackagePath": "staticwebassets\\js\\AllBooking.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingDetails.js",
+      "PackagePath": "staticwebassets\\js\\BookingDetails.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingEquipment.js",
+      "PackagePath": "staticwebassets\\js\\BookingEquipment.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingFlower.js",
+      "PackagePath": "staticwebassets\\js\\BookingFlower.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingFood.js",
+      "PackagePath": "staticwebassets\\js\\BookingFood.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingLight.js",
+      "PackagePath": "staticwebassets\\js\\BookingLight.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\BookingVenue.js",
+      "PackagePath": "staticwebassets\\js\\BookingVenue.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Equipment.js",
+      "PackagePath": "staticwebassets\\js\\Equipment.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Flower.js",
+      "PackagePath": "staticwebassets\\js\\Flower.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Food.js",
+      "PackagePath": "staticwebassets\\js\\Food.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Light.js",
+      "PackagePath": "staticwebassets\\js\\Light.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Register.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\UserProfile.js",
+      "PackagePath": "staticwebassets\\js\\UserProfile.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\Venue.js",
+      "PackagePath": "staticwebassets\\js\\Venue.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bulma.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bulma.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.bulma.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.bulma.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.dataTables.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.foundation.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.foundation.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.foundation.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.foundation.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.jqueryui.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.jqueryui.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.jqueryui.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.jqueryui.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.semanticui.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.semanticui.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\dataTables.semanticui.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\dataTables.semanticui.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\images\\sort_asc.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\images\\sort_both.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\images\\sort_desc.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bulma.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bulma.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.bulma.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.bulma.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.foundation.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.foundation.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.foundation.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.foundation.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.jqueryui.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.jqueryui.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.jqueryui.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.jqueryui.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.semanticui.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.semanticui.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\dataTables.semanticui.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\dataTables.semanticui.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\DataTables-1.13.8\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables-1.13.8\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\dataTablesScripts\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\dataTablesScripts\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\dataTablesScripts\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\lib\\dataTablesScripts\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\dataTablesScripts\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\dataTablesScripts\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\dataTablesScripts\\responsive.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\dataTablesScripts\\responsive.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datatables.css",
+      "PackagePath": "staticwebassets\\lib\\datatables.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datatables.js",
+      "PackagePath": "staticwebassets\\lib\\datatables.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datatables.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables.min.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datatables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datetimepicker\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\datetimepicker\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datetimepicker\\jquery-1.12.4.js",
+      "PackagePath": "staticwebassets\\lib\\datetimepicker\\jquery-1.12.4.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datetimepicker\\jqueryui.css",
+      "PackagePath": "staticwebassets\\lib\\datetimepicker\\jqueryui.css"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\datetimepicker\\jqueryui.js",
+      "PackagePath": "staticwebassets\\lib\\datetimepicker\\jqueryui.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Event.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Event.props",
+      "PackagePath": "build\\Event.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Event.props",
+      "PackagePath": "buildMultiTargeting\\Event.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Event.props",
+      "PackagePath": "buildTransitive\\Event.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

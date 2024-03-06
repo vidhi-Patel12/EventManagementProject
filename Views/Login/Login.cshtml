@@ -1,0 +1,49 @@
+﻿@model Event.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container" style="width:40%">
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:center">Login</div>
+        <div class="panel-body" style="align-content:center">
+            <div class="row">
+                <div class="row-md-8" style="align-self:center">
+                    <div class="card-body col-md-7">
+                        <form asp-controller="Login" asp-action="Login" method="post">
+                                <div class="form-group">
+                                    <label class="control-label" asp-for="Username">Username</label>
+                                    <input autocomplete="off" asp-for="Username" type="text" class="form-control" id="Username" />
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" asp-for="Password">Password</label>
+                                    <input autocomplete="off" asp-for="Password" type="password" class="form-control" id="Password" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    @* <label asp-for="RoleID" class="control-label"></label> *@
+                                    <input type="hidden" asp-for="RoleID" class="form-control" id="RoleID" />
+                                    <span asp-validation-for="RoleID" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <button onclick="fnLogin()" class="btn btn-success" type="button">Login</button>
+                                </div>
+                                <div style="text-align: center;">
+                                No account ? @Html.ActionLink("Create one ! Registration", "Create", "Registration")
+                                </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/js/login.js"></script>
+@* <script src="~/js/register.js"></script> *@

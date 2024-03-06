@@ -1,0 +1,214 @@
+﻿
+@{
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+        <div id="divBookingMaster" class="">
+            <div id="" class="container-fluid" >
+                <div id="" class="col-md-12">
+                    <form>
+                        <div id="" class="row" style="margin-left:100px ; margin-top:100px">
+                            <div class="card shadow border" style="margin-left:10px; width: 150%">
+                                <div class="col-8 col-xl-8 grid-margin stretch-card">
+                                    <table id="tblbookingdetail" class="table" style="width:100%; color:black">
+                                        <thead>
+                                            <tr>
+                                                <th>BookingNo</th>
+                                                <th>BookingDate</th>
+                                                <th>BookingApproval</th>
+                                                <th>BookingApprovalDate</th>
+                                                <th>Show Order</th>
+                                                <th>Cancel Booking</th>
+                                            </tr>
+                                        </thead>
+                                        @* <div>
+                                        <button type="button" class="btn btn-primary" id="" onclick="fnBookingDetail()"></button>
+                                        </div> *@
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+<div id="divAddEditElements" class="container" style="margin-left:10px ;margin-top:50px">
+    <br />
+    <div class="row">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Booking Details</div>
+            <div class="panel-body">
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                    <input type="hidden"  class="form-control" id="BookingID" />
+                    @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                </div>
+                <div class="col-lg-3">
+                    <label class="control-label" >Booking no</label>
+                    <input type="text" readonly="readonly" class="form-control" id="BookingNo" />
+                </div>
+                <div class="col-lg-3">
+                    <label class="control-label">Booking Date</label>
+                    <input readonly="readonly" maxlength="10" name="BookingDate" id="BookingDate" type="text" class="form-control" />
+                </div>
+                <div class="col-lg-3">
+                    <label class="control-label">TotalAmount</label>
+                    <input readonly="readonly" maxlength="10" name="TotalAmount" id="TotalAmount" type="text" class="form-control" />
+                </div>
+                <div class="col-lg-3">
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Venue Details</div>
+            <div class="panel-body">
+
+                <div class="col-lg-3">
+                    <label class="control-label">VenueName</label>
+                    <input type="text" readonly="readonly" name="VenueName" id="VenueName" class="form-control" />
+                </div>
+                <div class="col-lg-3">
+                    <label class="control-label" >VenueCost</label>
+                    <input readonly="readonly" maxlength="10" name="VenueCost" id="VenueCost" type="text" class="form-control" />
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Equipment Details</div>
+            <div class="panel-body">
+
+               @*  @for (int i = 0; i < Model.BookingEquipment.Count(); i++)
+                { }*@
+                    <div class="col-lg-3">
+                        <label class="control-label">EquipmentName</label>
+                    <input readonly="readonly" type="text" name="EquipmentName" id="EquipmentName" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label">EquipmentCost</label>
+                    <input readonly="readonly" maxlength="10" name="EquipmentCost" id="EquipmentCost" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+               
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Food Details</div>
+            <div class="panel-body">
+                @* @for (int i = 0; i < Model.BookingFood.Count(); i++)
+                {} *@
+
+                    <div class="col-lg-3">
+                        <label class="control-label" >FoodName</label>
+                    <input readonly="readonly" type="text" name="FoodName" id="FoodName" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label">FoodType</label>
+                    <input readonly="readonly" maxlength="10" name="FoodType" id="FoodType" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label" >MealType</label>
+                    <input readonly="readonly" maxlength="10" name="MealType" id="MealType" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label" >FoodCost</label>
+                    <input readonly="readonly" maxlength="10" name="FoodCost" id="FoodCost" type="text" class="form-control" />
+                    </div>
+                
+            </div>
+        </div>
+
+
+
+    </div>
+   
+    <div class="row">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Lighting Details</div>
+            <div class="panel-body">
+               @*  @for (int i = 0; i < Model.BookingLight.Count(); i++)
+                { } *@
+                    <div class="col-lg-3">
+                        <label class="control-label">LightName</label>
+                    <input readonly="readonly" type="text" name="LightName" id="LightName" class="form-control" />
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label class="control-label">LightType</label>
+                        <input readonly="readonly" maxlength="10" name="LightType" id="LightType" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label">LightCost</label>
+                    <input readonly="readonly" maxlength="10" name="LightCost" id="LightCost" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Flower Details</div>
+            <div class="panel-body">
+
+               @*  @for (int i = 0; i < Model.BookingFlower.Count(); i++)
+                {} *@
+                    <div class="col-lg-3">
+                        <label class="control-label">FlowerName</label>
+                    <input readonly="readonly" type="text" name="FlowerName" id="FlowerName" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="control-label">FlowerCost</label>
+                    <input readonly="readonly" maxlength="10" name="FlowerCost" id="FlowerCost" type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+                    <div class="col-lg-3">
+                    </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-danger" id="cancelBookingButton" onclick="CancelBooking()">Cancel Order</button>
+        <button type="button" class="btn btn-primary" id="" onclick="Loaddetails()">Back</button>
+    </div>
+</div>
+   
+
+
+<script src="~/js/allbooking.js"></script>

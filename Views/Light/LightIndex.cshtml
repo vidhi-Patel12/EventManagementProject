@@ -1,0 +1,98 @@
+﻿@model Event.Models.LightModel
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<div id="divDataMaster" class="">
+    <div id="" class="container-fluid">
+        <div id="" class="col-md-9">
+            <form id="divDataMaster">
+                <div id="" class="row" style="margin-left:100px ; margin-top:100px">
+                    <div class="card shadow border" style="margin-left:10px; width: 100%">
+                        <div class="col-8 col-xl-8 grid-margin stretch-card" style="width:98%;">
+                            <table id="tblLight" class="table" style="width:150px; color:black">
+                                <thead>
+                                    <tr style="width:98%;">
+                                        <th>LightId</th>
+                                        <th>LightType</th>
+                                        <th>LightName</th>
+                                        <th>LightCost</th>
+                                        <th>CreateDate</th>
+                                    </tr>
+                                </thead>
+                                <div>
+                                    <button type="button" class="btn btn-primary" onclick="fnAddNewMaster()" style="margin-top:10px">Add New</button>
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="divAddEditElements" class="card row" style="margin-top:100px; margin-left:120px;width:50%; border-width: 2px;border-style: solid; ">
+    <div class="d-flex container-fluid">
+        <div class="col-md-6">
+            <form>
+                <h3><span class="label label-info">Add Light</span></h3>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="LightName">LightID</label> *@
+                    <input type="hidden" class="form-control" id="LightID" value="0" />
+                    @* <span asp-validation-for="LightName" class="text-danger"></span> *@
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="LightType">Light Type</label>
+                    In Door: <input id="LightType" name="LightType" type="radio" value="In Door" />
+                    Out Door: <input id="LightType" name="LightType" type="radio" value="Out Door" />
+                    <span asp-validation-for="LightType" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="LightName">Light Name</label>
+                    <input asp-for="LightName" type="text" class="form-control" id="LightName" />
+                    <span asp-validation-for="LightName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="LightCost">Light Cost</label>
+                    <input asp-for="LightCost" type="text" class="form-control" id="LightCost" />
+                    <span asp-validation-for="LightCost" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="controls">
+                        <label class="control-label">Upload Light</label>
+                        <input type="hidden" name="LightFilename" multiple id="LightFilename" />
+                        <input required type="file" title="Please Upload Venue" name="files" multiple id="LightFilePath" />
+                        <br />
+                        <img src="" alt="Image" id="LightImage" style="width: 200px; height:150px" />
+                    </div>
+                    <div id="LightFilenameLabel"></div>
+                </div>
+                <div>
+                    <button type="button" id="btnSaveUpdateLight" onclick="fnAddUpdateLight()" class="btn btn-primary">Add/Edit</button>
+                    <button type="button" class="btn btn-primary" id="" onclick="fnLoadData()">Show All Light</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="~/lib/datatables.min.js"></script>
+<script src="~/lib/datatables.js"></script>
+<link href="~/lib/datatables.min.css" rel="stylesheet" />
+<link href="~/lib/datatables.css" rel="stylesheet" />
+<script src="~/js/light.js"></script>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

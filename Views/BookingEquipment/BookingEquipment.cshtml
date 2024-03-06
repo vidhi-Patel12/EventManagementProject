@@ -1,0 +1,75 @@
+﻿@model Event.Models.BookingEquipment
+@{
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+
+<div id="" class="card row" style="margin-top:90px; margin-left:120px;width:40%; border-width: 2px;border-style: solid; ">
+    <div class="d-flex container-fluid">
+        <div class="col-md-8">
+            <form>
+                <h3><span class="label label-info" style="margin-left:10px ;margin-top:50px">Book Equipment</span></h3>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                    <input type="hidden" class="form-control" id="BookingEquipmentID" value="0" />
+                    @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                </div>
+                <div class="form-group">
+                    @*  <label class="control-label"></label> <br /> *@
+                    <div class="form-check" id="EquipmentID" onchange="changeImage()">
+                        @*  <input class="form-check-input" type="checkbox" id="EquipmentID" name="DJ" value="something" checked>
+                        <label class="form-check-label" id="EquipmentID"></label> *@
+                    </div>
+                    <img src="" alt="Image" id="EquipmentImage" style="width: 200px; height:150px" />
+                </div>
+                <input type="hidden" class="form-control" id="BookingID" />
+                <div class="form-group">
+                    <button onclick="fnBookingId()" class="btn btn-success" type="button">Book Equipment</button>
+                    @Html.ActionLink("Cancel", "Dashboard", "Customer", null, new { @class = "btn btn-primary" })
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/bookingequipment.js"></script>
+
+
+<script src="~/js/site.js"></script>
+
+
+<script>
+    function changeImage() {
+        var checkedOptions = document.querySelectorAll('#EquipmentID input[type="checkbox"]:checked');
+
+        if (checkedOptions.length > 0) {
+            // If at least one checkbox is checked, use the first checked option
+            var firstCheckedOption = checkedOptions[0];
+            var equipmentFilePath = firstCheckedOption.getAttribute('data-img');
+
+            if (equipmentFilePath) {
+                document.getElementById("EquipmentImage").src = equipmentFilePath;
+            } else {
+                // If data-img attribute is not defined, set a default image
+                document.getElementById("EquipmentImage").src = "/wwwroot/EquipmentImages.jpg";
+            }
+        } else {
+            // If no checkbox is checked, set a default image
+            document.getElementById("EquipmentImage").src = "/wwwroot/EquipmentImages.jpg";
+        }
+    }
+
+
+
+</script>
+
+
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

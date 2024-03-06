@@ -1,0 +1,85 @@
+﻿@model Event.Models.BookingLight
+@{
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<div id="" class="card row" style="margin-top:90px; margin-left:120px;width:40%; border-width: 2px;border-style: solid; ">
+    <div class="d-flex container-fluid">
+        <div class="col-md-8">
+            <form>
+                <h3><span class="label label-info" style="margin-left:10px ;margin-top:50px">Book Light</span></h3>
+                <div class="form-group">
+                    @* <label class="control-label" asp-for="VenueName">VenueID</label> *@
+                    <input type="hidden" class="form-control" id="BookingLightID" value="0" />
+                    @* <span asp-validation-for="VenueName" class="text-danger"></span> *@
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" asp-for="LightType">Light Type</label>
+                    In Door: <input id="LightType" name="LightType" type="radio" value="In Door" />
+                    Out Door: <input id="LightType" name="LightType" type="radio" value="OutDoor" />
+                    <span asp-validation-for="LightType" class="text-danger"></span>
+                </div>
+
+                <div class="form-check" id="LightID" onchange="changeImage()">
+                    @*  <input class="form-check-input" type="checkbox" id="EquipmentID" name="DJ" value="something" checked>
+                    <label class="form-check-label" id="EquipmentID"></label> *@
+                </div>
+                <div>
+                    <img src="" alt="Image" id="LightImage" style="width: 200px; height:150px" />
+                </div>
+                @* <div class="form-group">
+                <label class="control-label" asp-for="LightName">Dish Name</label>
+                <input asp-for="LightName" type="hidden" class="form-control" id="LightName" />
+                <span asp-validation-for="LightName" class="text-danger"></span>
+                </div> *@
+
+
+                <div>
+                    <input type="hidden" class="form-control" id="BookingID" />
+                </div>
+                <div>
+                    <button onclick="fnBookingId()" class="btn btn-success" type="button">Book Light</button>
+                    @Html.ActionLink("Cancel", "Dashboard", "Customer", null, new { @class = "btn btn-primary" })
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/bookinglight.js"></script>
+
+
+<script>
+    function changeImage() {
+        var checkedOptions = document.querySelectorAll('#LightID input[type="checkbox"]:checked');
+
+        if (checkedOptions.length > 0) {
+            // If at least one checkbox is checked, use the first checked option
+            var firstCheckedOption = checkedOptions[0];
+            var lightFilePath = firstCheckedOption.getAttribute('data-img');
+
+            if (lightFilePath) {
+                document.getElementById("LightImage").src = lightFilePath;
+            } else {
+                // If data-img attribute is not defined, set a default image
+                document.getElementById("LightImage").src = "/wwwroot/LightImages.jpg";
+            }
+        } else {
+            // If no checkbox is checked, set a default image
+            document.getElementById("LightImage").src = "/wwwroot/LightImages.jpg";
+        }
+    }
+
+</script>
+
+
+
+<script src="~/js/site.js"></script>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
