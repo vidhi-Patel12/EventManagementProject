@@ -9,7 +9,7 @@ namespace Event.Utility
         //private static string cName = "Data Source=DESKTOP-8RADP4C\\SQLEXPRESS;Initial Catalog=Event;Integrated Security=True;Trust Server Certificate=True";
         //public static string Connection { get => cName; }
         public class ConnectionString
-    {
+        {
             private static IConfiguration configuration;
             static ConnectionString()
             {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ky4jVQhLn1HVWFFYuG07nzJPjQ1VyxuTnDrEfOgAuAMn5mToyNSCDRhiPJ5r4BVGZc7i1yEg63K7HApLwjFv+Q==",
+  "dgSpecHash": "F12PPoFxdauCySREGjZWJ1xKf96iym1VuS9Injm+dykW/eoe4TelWbOSZZQW2rNuvytLdlCo2udQCulnrr3UvQ==",
   "success": true,
-  "projectFilePath": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\Event.csproj",
+  "projectFilePath": "D:\\EventManagementProject\\Event.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net\\1.12.1\\datatables.net.1.12.1.nupkg.sha512",
     "C:\\Users\\Ivory Technolab\\.nuget\\packages\\datatables.net-dt\\1.13.7\\datatables.net-dt.1.13.7.nupkg.sha512",

@@ -177,29 +177,56 @@ namespace Event.Controllers.Flower
 
 
         [HttpPost]
-        public ActionResult DeleteFlowerData(string DeleteData)
+        public ActionResult DeleteFlowerData(string FlowerID, [FromServices] IWebHostEnvironment hostingEnvironment)
         {
             try
             {
-                if (DeleteData != "")
+                var dataTable = FlowerAccessLayer.FetchFlowerDetailsById(FlowerID);
+
+                string wwwRootPath = hostingEnvironment.WebRootPath;
+
+                string flowerImagesFolderPath = Path.Combine(wwwRootPath);
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
-                    var result = FlowerAccessLayer.DeleteFlowerData(DeleteData);
-                    if (result)
+                    // Access the FlowerFilePath from the first row of the DataTable
+                    string flowerFileName = dataTable.Rows[0]["FlowerFilePath"].ToString().Replace("/", "\\");
+
+                    // Combine the folder path with the file name
+                    string flowerFilePath = Path.Combine(flowerImagesFolderPath, flowerFileName.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(flowerFilePath))
                     {
-                        return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        // Delete file from the filesystem
+                        System.IO.File.Delete(flowerFilePath);
+
+                        // Delete record from the SQL table
+                        var result = FlowerAccessLayer.DeleteFlowerData(FlowerID);
+                        if (result)
+                        {
+                            return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        }
+                        else
+                        {
+                            return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        }
                     }
                     else
                     {
-                        return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        return Json(new { IsSuccess = false, Message = "File not found for the specified FlowerID!" });
                     }
+                }
+                else
+                {
+                    return Json(new { IsSuccess = false, Message = "No record found for the specified FlowerID!" });
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                return Json(new { IsSuccess = false, Message = "Error occurred: " + ex.Message });
             }
-            return Json(new { IsSuccess = false, Message = "Something went wrong, Please try again later!" });
         }
+
 
 
     }

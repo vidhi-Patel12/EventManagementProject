@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\Event.csproj": {}
+    "D:\\EventManagementProject\\Event.csproj": {}
   },
   "projects": {
-    "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\Event.csproj": {
+    "D:\\EventManagementProject\\Event.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\Event.csproj",
+        "projectUniqueName": "D:\\EventManagementProject\\Event.csproj",
         "projectName": "Event",
-        "projectPath": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\Event.csproj",
+        "projectPath": "D:\\EventManagementProject\\Event.csproj",
         "packagesPath": "C:\\Users\\Ivory Technolab\\.nuget\\packages\\",
-        "outputPath": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\obj\\",
+        "outputPath": "D:\\EventManagementProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ivory Technolab\\AppData\\Roaming\\NuGet\\NuGet.Config",

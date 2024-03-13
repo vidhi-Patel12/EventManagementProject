@@ -100,7 +100,7 @@ function fnAddNewMaster() {
     $('#divDataMaster').hide();
     $('#divAddEditElements').show();
     $('#LightID').val("");
-    $('#LightType').val("");
+    $('input[name="LightType"]').prop('checked', false);
     $('#LightName').val("");
     $('#LightCost').val("");
     $('#LightFilenameLabel').text("");
@@ -131,6 +131,7 @@ function fnEditLightData(LightID) {
                     //alert(data.dataList.lightID);
                     $("#LightID").prop("disabled", true);
                     $('#LightName').val(data.dataList.lightName);
+                    $('input[name="LightType"][value="' + data.dataList.lightType + '"]').prop('checked', true); 
                     $('#LightCost').val(data.dataList.lightCost);
                     $('#LightFilename').val(data.dataList.lightFilename );
                     $('#LightFilenameLabel').text(data.dataList.lightFilename);

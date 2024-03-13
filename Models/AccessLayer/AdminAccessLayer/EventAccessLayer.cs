@@ -103,8 +103,9 @@ namespace Event.Models
                     con.Open();
 
                     // Check if the username already exists
-                    SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Registration WHERE Username = @Username", con);
+                    SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Registration WHERE Username = @Username  OR EmailId = @EmailId", con);
                     checkCmd.Parameters.AddWithValue("@Username", Register[7]);
+                    checkCmd.Parameters.AddWithValue("@EmailId", Register[6]);
                     int count = (int)checkCmd.ExecuteScalar();
 
                     if (count > 0)
@@ -379,7 +380,7 @@ namespace Event.Models
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
 
-                    SqlCommand cmd = new SqlCommand("DELETE FROM Venue\r\nWHERE  VenueID = @VenueID", con);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Venue WHERE  VenueID = @VenueID", con);
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.Add("@VenueID", SqlDbType.Int).Value = Convert.ToString(DeleteData);
 

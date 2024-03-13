@@ -39,7 +39,7 @@ function fnAddUpdateFood() {
     /*foodlist.push($("#FoodID").val());*/
     foodlist.push($('input[name="FoodType"]:checked').val());
     foodlist.push($('input[name="MealType"]:checked').val());
-    foodlist.push($("#DishType").val());
+    foodlist.push($("#DishType option:selected").val());
     foodlist.push($("#FoodName").val());
     foodlist.push($("#FoodCost").val());
     foodlist.push("");
@@ -134,6 +134,9 @@ function fnEditFoodData(FoodID) {
                     $('#FoodID').val(data.dataList.foodID);
                     $("#FoodID").prop("disabled", true);
                     $('#FoodName').val(data.dataList.foodName);
+                    $('input[name="FoodType"][value="' + data.dataList.foodType + '"]').prop('checked', true); 
+                    $('input[name="MealType"][value="' + data.dataList.mealType + '"]').prop('checked', true);
+                    $('#DishType').val(data.dataList.dishType);
                     $('#FoodCost').val(data.dataList.foodCost);
                     $('#FoodFilenameLabel').text(data.dataList.foodFilename);
                     $('#FoodImage').attr('src', data.dataList.foodFilePath);

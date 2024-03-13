@@ -176,28 +176,54 @@ namespace Event.Controllers.Equipment
 
 
         [HttpPost]
-        public ActionResult DeleteEquipmentData(string DeleteData)
+        public ActionResult DeleteEquipmentData(string EquipmentID, [FromServices] IWebHostEnvironment hostingEnvironment)
         {
             try
             {
-                if (DeleteData != "")
+                var dataTable = EquipmentAccessLayer.FetchEquipmentDetailsById(EquipmentID);
+
+                string wwwRootPath = hostingEnvironment.WebRootPath;
+
+                string equipmentImagesFolderPath = Path.Combine(wwwRootPath);
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
-                    var result = EquipmentAccessLayer.DeleteEquipmentData(DeleteData);
-                    if (result)
+                    // Access the VenueFilePath from the first row of the DataTable
+                    string equipmentFileName = dataTable.Rows[0]["EquipmentFilePath"].ToString().Replace("/", "\\");
+
+                    // Combine the folder path with the file name
+                    string equipmentFilePath = Path.Combine(equipmentImagesFolderPath, equipmentFileName.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(equipmentFilePath))
                     {
-                        return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        // Delete file from the filesystem
+                        System.IO.File.Delete(equipmentFilePath);
+
+                        // Delete record from the SQL table
+                        var result = EquipmentAccessLayer.DeleteEquipmentData(EquipmentID);
+                        if (result)
+                        {
+                            return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        }
+                        else
+                        {
+                            return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        }
                     }
                     else
                     {
-                        return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        return Json(new { IsSuccess = false, Message = "File not found for the specified VenueID!" });
                     }
+                }
+                else
+                {
+                    return Json(new { IsSuccess = false, Message = "No record found for the specified VenueID!" });
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                return Json(new { IsSuccess = false, Message = "Error occurred: " + ex.Message });
             }
-            return Json(new { IsSuccess = false, Message = "Something went wrong, Please try again later!" });
         }
 
 

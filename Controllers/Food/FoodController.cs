@@ -158,6 +158,10 @@ namespace Event.Controllers.Food
                     FoodModel Obj = new FoodModel();
                     Obj.FoodID = Convert.ToInt32(dr["FoodID"]);
                     Obj.FoodName = Convert.ToString(dr["FoodName"]);
+                    Obj.FoodType = Convert.ToString(dr["FoodType"]);
+                    Obj.MealType = Convert.ToString(dr["MealType"]);
+                    Obj.DishType = Convert.ToString(dr["DishType"]);
+                    
                     Obj.FoodCost = Convert.ToInt32(dr["FoodCost"]);
                     Obj.FoodFilename = Convert.ToString(dr["FoodFilename"]);
                     Obj.FoodFilePath = Convert.ToString(dr["FoodFilePath"]);
@@ -175,29 +179,57 @@ namespace Event.Controllers.Food
 
 
         [HttpPost]
-        public ActionResult DeleteFoodData(string DeleteData)
+        
+        public ActionResult DeleteFoodData(string FoodID, [FromServices] IWebHostEnvironment hostingEnvironment)
         {
             try
             {
-                if (DeleteData != "")
+                var dataTable = FoodAccessLayer.FetchFoodDetailsById(FoodID);
+
+                string wwwRootPath = hostingEnvironment.WebRootPath;
+
+                string foodImagesFolderPath = Path.Combine(wwwRootPath);
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
-                    var result = FoodAccessLayer.DeleteFoodData(DeleteData);
-                    if (result)
+                    // Access the FoodFilePath from the first row of the DataTable
+                    string foodFileName = dataTable.Rows[0]["FoodFilePath"].ToString().Replace("/", "\\");
+
+                    // Combine the folder path with the file name
+                    string foodFilePath = Path.Combine(foodImagesFolderPath, foodFileName.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(foodFilePath))
                     {
-                        return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        // Delete file from the filesystem
+                        System.IO.File.Delete(foodFilePath);
+
+                        // Delete record from the SQL table
+                        var result = FoodAccessLayer.DeleteFoodData(FoodID);
+                        if (result)
+                        {
+                            return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        }
+                        else
+                        {
+                            return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        }
                     }
                     else
                     {
-                        return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        return Json(new { IsSuccess = false, Message = "File not found for the specified FoodID!" });
                     }
+                }
+                else
+                {
+                    return Json(new { IsSuccess = false, Message = "No record found for the specified FoodID!" });
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                return Json(new { IsSuccess = false, Message = "Error occurred: " + ex.Message });
             }
-            return Json(new { IsSuccess = false, Message = "Something went wrong, Please try again later!" });
         }
+
 
 
     }

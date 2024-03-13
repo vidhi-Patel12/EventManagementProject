@@ -85,7 +85,7 @@ function fnAddUpdateFlower() {
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#flowerImagePreview').attr('src', e.target.result);
-                    $("#FlowerImage").attr('src', e.target.result); // Set the src attribute of VenueImage
+                    $("#FlowerImage").attr('src', e.target.result); // Set the src attribute of FlowerImage
                 }
                 reader.readAsDataURL(files[0]);
             }
@@ -132,7 +132,7 @@ function fnEditFlowerData(FlowerID) {
                     $('#FlowerCost').val(data.dataList.flowerCost);
                     $('#FlowerFilename').val(data.dataList.flowerFilename);
                     $('#flowerFilenameLabel').text(data.dataList.flowerFilename);
-                    //$('#VenueFilePath').text(data.dataList.venueFileP);
+                    //$('#FlowerFilePath').text(data.dataList.FlowerFileP);
                     $('#FlowerImage').attr('src', data.dataList.flowerFilePath);
 
                     $('#Createdate').val(data.dataList.createdate);
@@ -256,9 +256,8 @@ function fnLoadFlowerDetails() {
 }
 
 
-function fnDeleteFlowerData(DeleteData) {
-
-    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; hieght:150px">' +
+function fnDeleteFlowerData(FlowerID) {
+    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; height:150px">' +
         '<div class="modal-content" style="margin-left:200px">' +
         '<span class="close" style="margin-left:10px">&times;</span>' +
         '<p style="margin-left:10px">Do you want to delete content?</p>' +
@@ -275,19 +274,22 @@ function fnDeleteFlowerData(DeleteData) {
         '</div>' +
         '</div>');
 
-  
+    // Append the dialog div to the body
     $('body').append(confirmationDialog);
 
-  
+    // Show the dialog
     $("#confirmationDialog").css("display", "block");
-    
+
+    // Handle delete button click
     $("#deleteBtn").on("click", function () {
-      
+        // Close the dialog
         $("#confirmationDialog").css("display", "none");
+
+        // Make AJAX request to delete the data and corresponding files
         $.ajax({
             type: "POST",
             url: "/Flower/DeleteFlowerData",
-            data: { DeleteData },
+            data: { FlowerID: FlowerID },
             success: function (data) {
                 if (!data.isSuccess) {
                     $('._CustomMessage').text(data.message);
@@ -299,12 +301,14 @@ function fnDeleteFlowerData(DeleteData) {
                 }
             },
             error: function () {
-             
+                // Handle error
             }
         });
     });
-    
+
+    // Handle cancel button click
     $("#cancelBtn, .close").on("click", function () {
+        // Close the dialog
         $("#confirmationDialog").css("display", "none");
     });
 }

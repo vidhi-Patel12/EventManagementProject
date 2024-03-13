@@ -263,20 +263,19 @@ function fnLoadVenueDetails() {
     }
 }
 
-function fnDeleteVenueData(DeleteData) {
-    // Create the dialog div using jQuery
-    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; hieght:150px">' +
+function fnDeleteVenueData(VenueID) {
+    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; height:150px">' +
         '<div class="modal-content" style="margin-left:200px">' +
         '<span class="close" style="margin-left:10px">&times;</span>' +
         '<p style="margin-left:10px">Do you want to delete content?</p>' +
         '<div class="row buttons"  style="margin-left:10px">' +
-        '<div class="row" style="width:185px;margin-bottom:5px">'+
+        '<div class="row" style="width:185px;margin-bottom:5px">' +
         '<div class= "col-xl-5 d-flex justify-content-center" style="width:auto"" >' +
-        '<button type="button" class="dt-btn-reject btn btn-danger btn-block" id="deleteBtn">Delete</button>'+
-        '</div >'+
-        '<div class="col-xl-5 d-flex justify-content-center" style="width:auto">'+
-        '<button type="button" class="dt-btn-approve btn btn-primary btn-block" id="cancelBtn">Cancel</button>'+
-        '</div>'+
+        '<button type="button" class="dt-btn-reject btn btn-danger btn-block" id="deleteBtn">Delete</button>' +
+        '</div >' +
+        '<div class="col-xl-5 d-flex justify-content-center" style="width:auto">' +
+        '<button type="button" class="dt-btn-approve btn btn-primary btn-block" id="cancelBtn">Cancel</button>' +
+        '</div>' +
         '</div > ' +
         '</div>' +
         '</div>' +
@@ -293,11 +292,11 @@ function fnDeleteVenueData(DeleteData) {
         // Close the dialog
         $("#confirmationDialog").css("display", "none");
 
-        // Make AJAX request to delete the data
+        // Make AJAX request to delete the data and corresponding files
         $.ajax({
             type: "POST",
             url: "/Venue/DeleteVenueData",
-            data: { DeleteData },
+            data: { VenueID: VenueID },
             success: function (data) {
                 if (!data.isSuccess) {
                     $('._CustomMessage').text(data.message);

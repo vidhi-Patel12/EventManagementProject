@@ -13,7 +13,10 @@ namespace Event.Controllers.Customer
     {
         public ActionResult Success()
         {
+            var Name = HttpContext.Session.GetString("Name");
+            ViewBag.Name = Name;
             return View();
+           
         }
 
         public JsonResult BookingDetailsForID()

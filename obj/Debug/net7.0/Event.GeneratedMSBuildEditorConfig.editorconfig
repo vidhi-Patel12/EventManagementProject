@@ -9,151 +9,151 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Event
 build_property.RootNamespace = Event
-build_property.ProjectDir = D:\Vidhi\ASP.NET PROJECTS\Event\Event\
+build_property.ProjectDir = D:\EventManagementProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Vidhi\ASP.NET PROJECTS\Event\Event
+build_property.MSBuildProjectDirectory = D:\EventManagementProject
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Admin/Dashboard.cshtml]
+[D:/EventManagementProject/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingDetail/BookingDetail.cshtml]
+[D:/EventManagementProject/Views/BookingDetail/BookingDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0RldGFpbFxCb29raW5nRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingEquipment/BookingEquipment.cshtml]
+[D:/EventManagementProject/Views/BookingEquipment/BookingEquipment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0VxdWlwbWVudFxCb29raW5nRXF1aXBtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingEquipment/Success.cshtml]
+[D:/EventManagementProject/Views/BookingEquipment/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0VxdWlwbWVudFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingFlower/BookFlower.cshtml]
+[D:/EventManagementProject/Views/BookingFlower/BookFlower.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0Zsb3dlclxCb29rRmxvd2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingFlower/Success.cshtml]
+[D:/EventManagementProject/Views/BookingFlower/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0Zsb3dlclxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingFood/BookFood.cshtml]
+[D:/EventManagementProject/Views/BookingFood/BookFood.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0Zvb2RcQm9va0Zvb2QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingFood/Success.cshtml]
+[D:/EventManagementProject/Views/BookingFood/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0Zvb2RcU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingLight/BookLight.cshtml]
+[D:/EventManagementProject/Views/BookingLight/BookLight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0xpZ2h0XEJvb2tMaWdodC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingLight/Success.cshtml]
+[D:/EventManagementProject/Views/BookingLight/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0xpZ2h0XFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingVenue/BookVenue.cshtml]
+[D:/EventManagementProject/Views/BookingVenue/BookVenue.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1ZlbnVlXEJvb2tWZW51ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/BookingVenue/Success.cshtml]
+[D:/EventManagementProject/Views/BookingVenue/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1ZlbnVlXFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Customer/Dashboard.cshtml]
+[D:/EventManagementProject/Views/Customer/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Equipment/AddEquipment.cshtml]
+[D:/EventManagementProject/Views/Equipment/AddEquipment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50XEFkZEVxdWlwbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Equipment/EquipmentIndex.cshtml]
+[D:/EventManagementProject/Views/Equipment/EquipmentIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50XEVxdWlwbWVudEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Flower/FlowerIndex.cshtml]
+[D:/EventManagementProject/Views/Flower/FlowerIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2VyXEZsb3dlckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Food/FoodIndex.cshtml]
+[D:/EventManagementProject/Views/Food/FoodIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxGb29kSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Home/Index.cshtml]
+[D:/EventManagementProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Home/Privacy.cshtml]
+[D:/EventManagementProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Light/LightIndex.cshtml]
+[D:/EventManagementProject/Views/Light/LightIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlnaHRcTGlnaHRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Login/Login.cshtml]
+[D:/EventManagementProject/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Registration/Create.cshtml]
+[D:/EventManagementProject/Views/Registration/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Registration/Index.cshtml]
+[D:/EventManagementProject/Views/Registration/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/AdminLayout.cshtml]
+[D:/EventManagementProject/Views/Shared/AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/CustomerLayout.cshtml]
+[D:/EventManagementProject/Views/Shared/CustomerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEN1c3RvbWVyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/Error.cshtml]
+[D:/EventManagementProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/SuperAdminLayout.cshtml]
+[D:/EventManagementProject/Views/Shared/SuperAdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN1cGVyQWRtaW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/EventManagementProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/ShowAllBooking/AllBooking.cshtml]
+[D:/EventManagementProject/Views/ShowAllBooking/AllBooking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd0FsbEJvb2tpbmdcQWxsQm9va2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/SuperAdmin/Dashboard.cshtml]
+[D:/EventManagementProject/Views/SuperAdmin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwZXJBZG1pblxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Venue/AddVenue.cshtml]
+[D:/EventManagementProject/Views/Venue/AddVenue.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcQWRkVmVudWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Venue/VenueIndex.cshtml]
+[D:/EventManagementProject/Views/Venue/VenueIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcVmVudWVJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/_ViewImports.cshtml]
+[D:/EventManagementProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/_ViewStart.cshtml]
+[D:/EventManagementProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Vidhi/ASP.NET PROJECTS/Event/Event/Views/Shared/_Layout.cshtml]
+[D:/EventManagementProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-015bomi28r

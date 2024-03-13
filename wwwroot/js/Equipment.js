@@ -28,7 +28,7 @@ function fnAddUpdateEquipment() {
     var equipmentlist = [];
   
     var EquipmentID = $("#EquipmentID").attr('value');
-    //alert($("#VenueID").val());
+    
 
 
     if (EquipmentID == "0") {
@@ -86,7 +86,7 @@ function fnAddUpdateEquipment() {
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#equipmentImagePreview').attr('src', e.target.result);
-                    $("#EquipmentImage").attr('src', e.target.result); // Set the src attribute of VenueImage
+                    $("#EquipmentImage").attr('src', e.target.result); 
                 }
                 reader.readAsDataURL(files[0]);
             }
@@ -268,8 +268,8 @@ function fnLoadEquipmentDetails() {
 }
 
 
-function fnDeleteEquipmentData(DeleteData) {
-    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; hieght:150px">' +
+function fnDeleteEquipmentData(EquipmentID) {
+    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; height:150px">' +
         '<div class="modal-content" style="margin-left:200px">' +
         '<span class="close" style="margin-left:10px">&times;</span>' +
         '<p style="margin-left:10px">Do you want to delete content?</p>' +
@@ -297,11 +297,11 @@ function fnDeleteEquipmentData(DeleteData) {
         // Close the dialog
         $("#confirmationDialog").css("display", "none");
 
-        // Make AJAX request to delete the data
+        // Make AJAX request to delete the data and corresponding files
         $.ajax({
             type: "POST",
             url: "/Equipment/DeleteEquipmentData",
-            data: { DeleteData },
+            data: { EquipmentID: EquipmentID },
             success: function (data) {
                 if (!data.isSuccess) {
                     $('._CustomMessage').text(data.message);

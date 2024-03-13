@@ -39,7 +39,7 @@ function fnAddUpdateFood() {
     /*foodlist.push($("#FoodID").val());*/
     foodlist.push($('input[name="FoodType"]:checked').val());
     foodlist.push($('input[name="MealType"]:checked').val());
-    foodlist.push($("#DishType").val());
+    foodlist.push($("#DishType option:selected").val());
     foodlist.push($("#FoodName").val());
     foodlist.push($("#FoodCost").val());
     foodlist.push("");
@@ -89,7 +89,7 @@ function fnAddUpdateFood() {
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#foodImagePreview').attr('src', e.target.result);
-                    $("#FoodImage").attr('src', e.target.result); // Set the src attribute of VenueImage
+                    $("#FoodImage").attr('src', e.target.result); // Set the src attribute of FoodImage
                 }
                 reader.readAsDataURL(files[0]);
             }
@@ -134,6 +134,9 @@ function fnEditFoodData(FoodID) {
                     $('#FoodID').val(data.dataList.foodID);
                     $("#FoodID").prop("disabled", true);
                     $('#FoodName').val(data.dataList.foodName);
+                    $('input[name="FoodType"][value="' + data.dataList.foodType + '"]').prop('checked', true); 
+                    $('input[name="MealType"][value="' + data.dataList.mealType + '"]').prop('checked', true);
+                    $('#DishType').val(data.dataList.dishType);
                     $('#FoodCost').val(data.dataList.foodCost);
                     $('#FoodFilenameLabel').text(data.dataList.foodFilename);
                     $('#FoodImage').attr('src', data.dataList.foodFilePath);
@@ -268,9 +271,8 @@ function fnLoadFoodDetails() {
 }
 
 
-function fnDeleteFoodData(DeleteData) {
-
-    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; hieght:150px">' +
+function fnDeleteFoodData(FoodID) {
+    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; height:150px">' +
         '<div class="modal-content" style="margin-left:200px">' +
         '<span class="close" style="margin-left:10px">&times;</span>' +
         '<p style="margin-left:10px">Do you want to delete content?</p>' +
@@ -298,11 +300,11 @@ function fnDeleteFoodData(DeleteData) {
         // Close the dialog
         $("#confirmationDialog").css("display", "none");
 
-        // Make AJAX request to delete the data
+        // Make AJAX request to delete the data and corresponding files
         $.ajax({
             type: "POST",
             url: "/Food/DeleteFoodData",
-            data: { DeleteData },
+            data: { FoodID: FoodID },
             success: function (data) {
                 if (!data.isSuccess) {
                     $('._CustomMessage').text(data.message);
