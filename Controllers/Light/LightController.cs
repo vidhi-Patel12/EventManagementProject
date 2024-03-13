@@ -173,29 +173,56 @@ namespace Event.Controllers.Light
 
 
         [HttpPost]
-        public ActionResult DeleteLightData(string DeleteData)
+        public ActionResult DeleteLightData(string LightID, [FromServices] IWebHostEnvironment hostingEnvironment)
         {
             try
             {
-                if (DeleteData != "")
+                var dataTable = LightAccessLayer.FetchLightDetailsById(LightID);
+
+                string wwwRootPath = hostingEnvironment.WebRootPath;
+
+                string lightImagesFolderPath = Path.Combine(wwwRootPath);
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
-                    var result = LightAccessLayer.DeleteLightData(DeleteData);
-                    if (result)
+                    // Access the LightFilePath from the first row of the DataTable
+                    string lightFileName = dataTable.Rows[0]["LightFilePath"].ToString().Replace("/", "\\");
+
+                    // Combine the folder path with the file name
+                    string lightFilePath = Path.Combine(lightImagesFolderPath, lightFileName.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(lightFilePath))
                     {
-                        return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        // Delete file from the filesystem
+                        System.IO.File.Delete(lightFilePath);
+
+                        // Delete record from the SQL table
+                        var result = LightAccessLayer.DeleteLightData(LightID);
+                        if (result)
+                        {
+                            return Json(new { IsSuccess = true, Message = "Record is deleted!" });
+                        }
+                        else
+                        {
+                            return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        }
                     }
                     else
                     {
-                        return Json(new { IsSuccess = false, Message = "Something went wrong while deleting record!" });
+                        return Json(new { IsSuccess = false, Message = "File not found for the specified LightID!" });
                     }
+                }
+                else
+                {
+                    return Json(new { IsSuccess = false, Message = "No record found for the specified LightID!" });
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                return Json(new { IsSuccess = false, Message = "Error occurred: " + ex.Message });
             }
-            return Json(new { IsSuccess = false, Message = "Something went wrong, Please try again later!" });
         }
+
 
 
     }

@@ -100,7 +100,7 @@ function fnRegister() {
             if (data.isSuccess) {
                 window.location.href = '/Login/Login?name=' + data.Name;
             } else {
-                alert("Username already exists. Please choose a different username.");
+                alert("Username or Email already exists. Please choose different ones.");
             } 
             //window.location.href = '/Login/Login?name=' + data.name ;
             if (!data.isSuccess) {

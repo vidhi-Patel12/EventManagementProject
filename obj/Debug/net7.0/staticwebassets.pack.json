@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\EquipmentImages\\mike stockphoto.jpg"
     },
     {
+      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\Eventlogo1.png",
+      "PackagePath": "staticwebassets\\Eventlogo1.png"
+    },
+    {
       "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\FlowerImages\\51KZcUQIyiS.jpg",
       "PackagePath": "staticwebassets\\FlowerImages\\51KZcUQIyiS.jpg"
     },
@@ -133,40 +137,8 @@
       "PackagePath": "staticwebassets\\LightImages\\string In-door.jpeg"
     },
     {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg",
-      "PackagePath": "staticwebassets\\VenueImages\\1000_F_125955869_qRmUszpJTLfY4mDA9B245qk6W58nnrsT.jpg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg",
-      "PackagePath": "staticwebassets\\VenueImages\\240_F_22733692_2V60BG3qK8iHCTg81KACf6kNaK42MQaE.jpg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Commercial-Outdoor-Light.jpeg",
-      "PackagePath": "staticwebassets\\VenueImages\\Commercial-Outdoor-Light.jpeg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Eventlogo1.png",
-      "PackagePath": "staticwebassets\\VenueImages\\Eventlogo1.png"
-    },
-    {
       "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Palace Venue.jpg",
       "PackagePath": "staticwebassets\\VenueImages\\Palace Venue.jpg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\Rasturant venue.jfif",
-      "PackagePath": "staticwebassets\\VenueImages\\Rasturant venue.jfif"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\banquet-hall.jpg",
-      "PackagePath": "staticwebassets\\VenueImages\\banquet-hall.jpg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\download (2).jpg",
-      "PackagePath": "staticwebassets\\VenueImages\\download (2).jpg"
-    },
-    {
-      "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\download.jpg",
-      "PackagePath": "staticwebassets\\VenueImages\\download.jpg"
     },
     {
       "Id": "D:\\Vidhi\\ASP.NET PROJECTS\\Event\\Event\\wwwroot\\VenueImages\\garden-ocean-wedding-02.jpg",

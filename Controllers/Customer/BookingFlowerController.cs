@@ -11,7 +11,10 @@ namespace Event.Controllers.Customer
     {
         public IActionResult Success()
         {
+            var Name = HttpContext.Session.GetString("Name");
+            ViewBag.Name = Name;
             return View();
+           
         }
         public IActionResult BookFlower()
         {

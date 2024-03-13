@@ -85,7 +85,7 @@ function fnAddUpdateLight() {
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#lightImagePreview').attr('src', e.target.result);
-                    $("#LightImage").attr('src', e.target.result); // Set the src attribute of VenueImage
+                    $("#LightImage").attr('src', e.target.result); // Set the src attribute of LightImage
                 }
                 reader.readAsDataURL(files[0]);
             }
@@ -100,7 +100,7 @@ function fnAddNewMaster() {
     $('#divDataMaster').hide();
     $('#divAddEditElements').show();
     $('#LightID').val("");
-    $('#LightType').val("");
+    //$('input[name="LightType"]').prop('checked', false);
     $('#LightName').val("");
     $('#LightCost').val("");
     $('#LightFilenameLabel').text("");
@@ -131,6 +131,7 @@ function fnEditLightData(LightID) {
                     //alert(data.dataList.lightID);
                     $("#LightID").prop("disabled", true);
                     $('#LightName').val(data.dataList.lightName);
+                    $('input[name="LightType"][value="' + data.dataList.lightType + '"]').prop('checked', true); 
                     $('#LightCost').val(data.dataList.lightCost);
                     $('#LightFilename').val(data.dataList.lightFilename );
                     $('#LightFilenameLabel').text(data.dataList.lightFilename);
@@ -150,6 +151,7 @@ function fnEditLightData(LightID) {
     });
 }
 function fnLoadData() {
+   
     /*  alert("Hi");*/
     $.ajax({
         type: "POST",
@@ -260,9 +262,8 @@ function fnLoadLightDetails() {
 }
 
 
-function fnDeleteLightData(DeleteData) {
-
-    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; hieght:150px">' +
+function fnDeleteLightData(LightID) {
+    var confirmationDialog = $('<div id="confirmationDialog" class="modal modal-center" style="width:550px; height:150px">' +
         '<div class="modal-content" style="margin-left:200px">' +
         '<span class="close" style="margin-left:10px">&times;</span>' +
         '<p style="margin-left:10px">Do you want to delete content?</p>' +
@@ -279,19 +280,22 @@ function fnDeleteLightData(DeleteData) {
         '</div>' +
         '</div>');
 
-
+    // Append the dialog div to the body
     $('body').append(confirmationDialog);
 
-
+    // Show the dialog
     $("#confirmationDialog").css("display", "block");
 
+    // Handle delete button click
     $("#deleteBtn").on("click", function () {
-
+        // Close the dialog
         $("#confirmationDialog").css("display", "none");
+
+        // Make AJAX request to delete the data and corresponding files
         $.ajax({
             type: "POST",
             url: "/Light/DeleteLightData",
-            data: { DeleteData },
+            data: { LightID: LightID },
             success: function (data) {
                 if (!data.isSuccess) {
                     $('._CustomMessage').text(data.message);
@@ -303,12 +307,14 @@ function fnDeleteLightData(DeleteData) {
                 }
             },
             error: function () {
-
+                // Handle error
             }
         });
     });
 
+    // Handle cancel button click
     $("#cancelBtn, .close").on("click", function () {
+        // Close the dialog
         $("#confirmationDialog").css("display", "none");
     });
 }
